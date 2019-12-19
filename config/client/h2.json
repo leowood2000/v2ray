@@ -18,14 +18,13 @@
                 ]
             },
             "streamSettings": {
-                "network": "kcp",
-                "kcpSettings": {
-                    "uplinkCapacity": 100,
-                    "downlinkCapacity": 100,
-                    "congestion": true,
-                    "header": {
-                        "type": "none"
-                    }
+                "network": "h2",
+                "security": "tls",
+                "httpSettings": {
+                    "host": [
+                        "233blog.com"
+                    ],
+                    "path": "/233blog"
                 }
             },
             "mux": {
